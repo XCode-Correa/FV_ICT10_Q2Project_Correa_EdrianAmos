@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="EXAC.png">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Q2 Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="EXAC.png" alt="EXAC Logo" class="logo-img">
+        </div>
+
+        <h1>ICT CLUB CHECKER</h1>
+        <p>Candidate Verification System</p>
+
+        <div>
+            <form onsubmit="return false;">
+                <div class="form-check">
+                    <div class="form-group">
+                        <input type="text" id="first_name" class="input" placeholder="First name" required>
+                        <input type="text" id="last_name" class="input" placeholder="Last name" required>
+                    </div>
+                </div>
+                
+                <div class="button-contain">
+                    <button type="button" py-click="add_member">ENTER</button>
+                </div>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ICT 2nd Quarter | Edrian Correa | 10 - Ruby AY26-27
+    </footer>
+    
+    <script type="py" src="main.py"></script>
+</body>
+</html>
