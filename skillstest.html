@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="EXAC.png">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Q2 Project</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-left">
+        <img src="EXAC.png" alt="Logo">
+        <span>EXACode</span>
+        </a>
+
+        <div class="nav-right" id="navRight">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drill2.html">Drill 2</a></li>
+            <li><a href="sw1.html">Seatwork 1</a></li>
+            <li><a href="skillstest.html" class="active">Skills Test</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div id="page-loader">
+        <img src="EXAC.png" alt="" class="loader-logo">
+    </div>
+    
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="EXAC.png" alt="EXAC Logo" class="logo-img">
+        </div>
+
+        <h1>ELEMENT FINDER</h1>
+        <p>Periodic Table Information Finder</p>
+
+        <div>
+            <form onsubmit="return false;">
+                <div class="form-check">
+                    <div class="form-group">
+                        <input type="text" id="element1" class="input" placeholder="Element Symbol ONLY" required>
+                    </div>
+                </div>
+                
+                <div class="button-contain">
+                    <button type="button" py-click="check_element">CHECK ELEMENT</button>
+                </div>
+            </form>
+            <br><br>
+            <div id="result">
+                <h3>Search Result</h3>
+                <p><b>Symbol: <span id="symbol"> </span></b></p>
+                <p><b>Element: <span id="name"> </span></b></p>
+                <p><b>Atomic Number: <span id="number"> </span></b></p>
+                <p><b>Atomic Mass: <span id="mass"> </span></b></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ICT 2nd Quarter | Edrian Correa | 10 - Ruby AY26-27
+    </footer>
+    
+    <script type="py" src="main.py"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="EXAC.png">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>Q2 Project</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-left">
+        <img src="EXAC.png" alt="Logo">
+        <span>EXACode</span>
+        </a>
+
+        <div class="nav-right" id="navRight">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="drill2.html" class="active">Drill 2</a></li>
+            <li><a href="sw1.html">Seatwork 1</a></li>
+            <li><a href="skillstest.html">Skills Test</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div id="page-loader">
+        <img src="EXAC.png" alt="" class="loader-logo">
+    </div>
+    
+    <div class="container">
+        <div class="logo-wrapper">
+            <img src="EXAC.png" alt="EXAC Logo" class="logo-img">
+        </div>
+
+        <h1>ICT CLUB RECRUITMENT</h1>
+        <p>Addition of Club Members System</p>
+
+        <div>
+            <form onsubmit="return false;">
+                <div class="form-check">
+                    <div class="form-group">
+                        <input type="text" id="first_name" class="input" placeholder="First name" required>
+                        <input type="text" id="last_name" class="input" placeholder="Last name" required>
+                    </div>
+                </div>
+                
+                <div class="button-contain">
+                    <button type="button" py-click="add_member">ENTER</button>
+                </div>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 ICT 2nd Quarter | Edrian Correa | 10 - Ruby AY26-27
+    </footer>
+    
+    <script type="py" src="main.py"></script>
+    <script src="main.js"></script>
+</body>
+</html>
