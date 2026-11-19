@@ -275,9 +275,24 @@ footer {
 }
 
 
-/* INDEX/HOME PAGE CSS */
+/* Meet The Creator PAGE CSS */
 .container.creator-container {
     max-width: 500px;
+}
+
+.pfp-wrapper {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 1px solid #3f3f46;
+    padding: 4px;
+    background: #202024;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
 /* QUOTE */
