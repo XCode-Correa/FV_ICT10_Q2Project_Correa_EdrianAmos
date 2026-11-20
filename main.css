@@ -285,7 +285,11 @@ footer {
 }
 
 .profile-img {
+<<<<<<< HEAD
     width: 35%;
+=======
+    width: 40%;
+>>>>>>> 4f33c2c4814406a406e405f655cdb682782ed87c
     height: auto;
     object-fit: contain;
     border-radius: 100%;
